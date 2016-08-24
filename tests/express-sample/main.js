@@ -3,8 +3,7 @@ var express = require('express');
 
 var app = express();
 nunjucks.configure('views', { autoescape: true,
-                              express: app,
-                              watch: true });
+                              express: app });
 
 // app
 

@@ -37,7 +37,6 @@ module.exports.configure = function(templatesPath, opts) {
     var TemplateLoader;
     if(loaders.FileSystemLoader) {
         TemplateLoader = new loaders.FileSystemLoader(templatesPath, {
-            watch: opts.watch,
             noCache: opts.noCache
         });
     }
